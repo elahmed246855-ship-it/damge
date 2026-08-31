@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القمة للتكسير والترميم | مقاولات وتعديل مباني</title>
+    <meta name="description" content="خدمات تكسير الحوائط والأرضيات وترميم المباني وتعديل الشقق بأعلى جودة.">
+    
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://images.pexels.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- SEO -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="القمة للتكسير والترميم">
+    <meta name="theme-color" content="#f97316">
+    <meta name="format-detection" content="telephone=yes">
+    <!-- أضف canonical بعد معرفة الدومين النهائي: <link rel="canonical" href="https://YOUR-DOMAIN.com/"> -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_EG">
+    <meta property="og:site_name" content="القمة للتكسير والترميم">
+    <meta property="og:title" content="القمة للتكسير والترميم | مقاولات وتعديل مباني">
+    <meta property="og:description" content="خدمات تكسير الحوائط والأرضيات وترميم المباني وتعديل الشقق بدقة وجودة عالية.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image:alt" content="أعمال التكسير والترميم والمقاولات">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="القمة للتكسير والترميم | مقاولات وتعديل مباني">
+    <meta name="twitter:description" content="خدمات تكسير الحوائط والأرضيات وترميم المباني وتعديل الشقق بدقة وجودة عالية.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            500: '#f97316', // Orange Construction Accent
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Structured Data: Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "خدمات التكسير والترميم الإنشائي",
+      "serviceType": "تكسير وترميم وتعديل المباني",
+      "description": "خدمات تكسير وإزالة الجدران والأرضيات، معالجة الشقوق، وترميم وتعديل الشقق والمقرات التجارية.",
+      "provider": {
+        "@type": "Organization",
+        "name": "القمة للتكسير والترميم"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "مصر"
+      }
+    }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .img-comp-container {
+            position: relative;
+            height: 320px;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+        .img-comp-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .img-comp-img img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .img-comp-slider {
+            position: absolute;
+            z-index: 30;
+            cursor: ew-resize;
+            width: 40px;
+            height: 40px;
+            background-color: #f97316;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 font-sans antialiased pb-20 md:pb-0">
+
+    <!-- Header / Navbar -->
+    <header class="max-w-7xl mx-auto p-4 flex justify-between items-center border-b border-gray-200 dark:border-gray-800 sticky top-0 bg-white/90 dark:bg-gray-950/90 backdrop-blur-md z-50">
+        
+        <!-- SVG Vector Logo -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center text-white shadow-md">
+                <i class="fa-solid fa-hammer text-xl"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-black tracking-tight text-gray-900 dark:text-white">القمة</span>
+                <span class="text-xs text-brand-600 dark:text-brand-500 font-bold -mt-1">للتكسير والترميم</span>
+            </div>
+        </div>
+
+        <!-- Control Buttons & Contacts -->
+        <div class="flex items-center gap-3">
+            
+            <!-- Dark / Light Mode Switcher -->
+            <button onclick="toggleDarkMode()" class="p-2.5 rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800 transition" title="تغيير الوضع" aria-label="تغيير الوضع بين الوضع الداكن والفاتح">
+                <i id="theme-icon" class="fa-solid fa-moon text-lg"></i>
+            </button>
+
+            <!-- Call Button -->
+            <a href="tel:+201000000000" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-lg transition flex items-center gap-2 text-sm">
+                <i class="fa-solid fa-phone"></i>
+                <span class="hidden sm:inline">اتصل بنا</span>
+            </a>
+            
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-4 py-2 rounded-lg transition flex items-center gap-2 text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span class="hidden sm:inline">واتساب</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto text-center py-12 px-5">
+        <div class="inline-flex items-center gap-2 bg-brand-50 dark:bg-brand-500/10 text-brand-600 dark:text-brand-500 border border-brand-200 dark:border-brand-500/20 px-4 py-1.5 rounded-full font-bold text-xs md:text-sm mb-6">
+            <i class="fa-solid fa-award"></i>
+            <span>خبرة الميدان لأكثر من 3 سنوات في مقاولات الترميم</span>
+        </div>
+        
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900 dark:text-white">
+            خدمات التكسير والترميم الإنشائي <br>
+            <span class="text-brand-500">بدقة عالية وبدون أضرار للمبنى</span>
+        </h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-4 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+            متخصصون في تكسير وإزالة الجدران والأرضيات، معالجة الشقوق، وتعديل الشقق والمقرات التجارية بأحدث المعدات مع رفع الردش أولاً بأول.
+        </p>
+        
+        <!-- Hero Actions -->
+        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:+201000000000" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-3.5 rounded-xl transition flex items-center justify-center gap-3 shadow-lg shadow-emerald-600/20">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>اتصال مباشر</span>
+            </a>
+            <a href="https://wa.me/201000000000" target="_blank" rel="noopener noreferrer" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-7 py-3.5 rounded-xl transition flex items-center justify-center gap-3 shadow-lg shadow-brand-500/20">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>طلب معاينة مجانية</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Real Construction Services -->
+    <section class="max-w-7xl mx-auto py-12 px-5 border-t border-gray-200 dark:border-gray-800">
+        <div class="text-center mb-10">
+            <span class="text-brand-500 font-bold uppercase text-xs tracking-wider">خدماتنا الميدانية</span>
+            <h2 class="text-2xl md:text-3xl font-bold mt-1 text-gray-900 dark:text-white">ما نقدمه في أعمال التكسير والترميم</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Service 1: Wall Demolition -->
+            <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=600" alt="تكسير وإزالة الجدران وحوائط المباني" width="600" height="192" fetchpriority="high" decoding="async" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">تكسير وإزالة الجدران</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">إزالة القواطع وحوائط المباني وتوسيع الغرف بأمان ودون التأثير على الخرسانة والأساسات.</p>
+                </div>
+            </div>
+
+            <!-- Service 2: Floor Removal -->
+            <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition">
+                <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600" alt="تكسير وتجهيز الأرضيات وإزالة البلاط القديم" width="600" height="192" loading="lazy" decoding="async" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">تكسير وتجهيز الأرضيات</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">إزالة السيراميك والبلاط القديم وتأهيل الموقع لتأسيس السباكة والصبات الحديثة.</p>
+                </div>
+            </div>
+
+            <!-- Service 3: Renovation & Crack Repair -->
+           <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-md transition">
+    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="ترميم وتدعيم الشقوق في المباني" width="800" height="192" loading="lazy" decoding="async" class="w-full h-48 object-cover">
+    <div class="p-5">
+        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">ترميم وتدعيم الشقوق</h3>
+        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">معالجة التصدعات المعمارية والخرسانية وتدعيم الأسقف بمواد إبوكسية وخرسانية مخصصة.</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Interactive Before & After -->
+    <section class="max-w-7xl mx-auto py-12 px-5 border-t border-gray-200 dark:border-gray-800">
+        <div class="text-center mb-10">
+            <span class="text-brand-500 font-bold uppercase text-xs tracking-wider">معرض الأعمال التفاعلي</span>
+            <h2 class="text-2xl md:text-3xl font-bold mt-1 text-gray-900 dark:text-white">شاهد الشغل قبل وبعد التكسير والترميم</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white dark:bg-gray-900 p-4 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm">
+                <div class="img-comp-container mb-3" id="project1">
+                    <div class="img-comp-img">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="بعد ترميم وتشطيب الشقة" width="800" height="320" loading="lazy" decoding="async">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=800" alt="قبل تكسير الحوائط" width="800" height="320" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">ترميم وتعديل تقسيم شقة</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">إزالة الحوائط القديمة وتأهيل المساحة بالكامل للتشطيب المودرن.</p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white dark:bg-gray-900 p-4 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm">
+                <div class="img-comp-container mb-3" id="project2">
+                    <div class="img-comp-img">
+                        <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800" alt="بعد تجهيز الأرضيات" width="800" height="320" loading="lazy" decoding="async">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800" alt="قبل تكسير البلاط القديم" width="800" height="320" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">تكسير الأرضيات القديمة وتجهيزها</h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">إزالة البلاط القديم ونقل الردش وتهيئته لصب الخرسانة والعزل.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Badge Banner -->
+    <section class="max-w-7xl mx-auto py-6 px-5">
+        <div class="bg-brand-500 text-white rounded-xl p-6 text-center shadow-md">
+            <h3 class="text-2xl font-extrabold mb-1">خبرة أكثر من 3 سنوات في المقاولات</h3>
+            <p class="text-white/90 text-sm max-w-lg mx-auto">
+                نفذنا العديد من أعمال التكسير والترميم والتعديل الهيكلي بسلامة تامة ودقة في المواعيد.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="max-w-4xl mx-auto py-12 px-5 border-t border-gray-200 dark:border-gray-800">
+        <div class="text-center mb-8">
+            <span class="text-brand-500 font-bold uppercase text-xs tracking-wider">أسئلة مكررة</span>
+            <h2 class="text-2xl font-bold mt-1 text-gray-900 dark:text-white">الأسئلة الشائعة</h2>
+        </div>
+
+        <div class="space-y-3">
+            <!-- Question 1 -->
+            <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden">
+                <button onclick="toggleFAQ(1)" class="w-full text-right p-4 font-bold text-gray-900 dark:text-gray-100 flex justify-between items-center focus:outline-none">
+                    <span>1. هل يؤثر تكسير الحوائط على أمان المبنى؟</span>
+                    <i id="icon-1" class="fa-solid fa-chevron-down text-brand-500 text-sm transition-transform duration-300"></i>
+                </button>
+                <div id="faq-1" class="hidden p-4 pt-0 text-gray-600 dark:text-gray-400 text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800/60">
+                    نحن نكتفي بتكسير وإزالة حوائط الفصل فقط، دون الإضرار بالأعمدة أو السملات والكمرات الأساسية للحفاظ على السلامة الإنشائية.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden">
+                <button onclick="toggleFAQ(2)" class="w-full text-right p-4 font-bold text-gray-900 dark:text-gray-100 flex justify-between items-center focus:outline-none">
+                    <span>2. كيف يتم نقل وإزالة الردش والمخلفات؟</span>
+                    <i id="icon-2" class="fa-solid fa-chevron-down text-brand-500 text-sm transition-transform duration-300"></i>
+                </button>
+                <div id="faq-2" class="hidden p-4 pt-0 text-gray-600 dark:text-gray-400 text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800/60">
+                    نقوم بتجميع المخلفات ونقلها عبر سيارات النقل الخاصة فور الانتهاء وتسليم الموقع كاملاً ونظيفاً.
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden">
+                <button onclick="toggleFAQ(3)" class="w-full text-right p-4 font-bold text-gray-900 dark:text-gray-100 flex justify-between items-center focus:outline-none">
+                    <span>3. كيف أحصل على معاينة لحساب التكلفة؟</span>
+                    <i id="icon-3" class="fa-solid fa-chevron-down text-brand-500 text-sm transition-transform duration-300"></i>
+                </button>
+                <div id="faq-3" class="hidden p-4 pt-0 text-gray-600 dark:text-gray-400 text-sm leading-relaxed border-t border-gray-100 dark:border-gray-800/60">
+                    يمكنك التواصل مباشرة عبر زر الاتصال أو الواتساب، وسيتم التنسيق لإرسال الفني ومعاينة المكان مجاناً.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Mobile Fixed Action Buttons -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 p-3 flex gap-3 md:hidden z-50">
+        <a href="tel:+201000000000" class="flex-1 bg-emerald-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow">
+            <i class="fa-solid fa-phone"></i>
+            <span>اتصال</span>
+        </a>
+        <a href="https://wa.me/201000000000" target="_blank" class="flex-1 bg-brand-500 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>واتساب</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Dark Mode Toggle Logic
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                html.classList.add('dark');
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+        // FAQ Toggle Logic
+        function toggleFAQ(index) {
+            const content = document.getElementById(`faq-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Before / After Comparison Logic
+        function initComparisons() {
+            var x = document.getElementsByClassName("img-comp-overlay");
+            for (var i = 0; i < x.length; i++) {
+                compareImages(x[i]);
+            }
+            function compareImages(img) {
+                var slider, clicked = 0, w, h;
+                w = img.offsetWidth;
+                h = img.offsetHeight;
+                img.style.width = (w / 2) + "px";
+                
+                slider = document.createElement("DIV");
+                slider.setAttribute("class", "img-comp-slider");
+                slider.innerHTML = '<i class="fa-solid fa-left-right text-xs"></i>';
+                img.parentElement.insertBefore(slider, img);
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                
+                slider.addEventListener("mousedown", slideReady);
+                window.addEventListener("mouseup", slideFinish);
+                slider.addEventListener("touchstart", slideReady);
+                window.addEventListener("touchend", slideFinish);
+                
+                function slideReady(e) {
+                    e.preventDefault();
+                    clicked = 1;
+                    window.addEventListener("mousemove", slideMove);
+                    window.addEventListener("touchmove", slideMove);
+                }
+                function slideFinish() {
+                    clicked = 0;
+                }
+                function slideMove(e) {
+                    var pos;
+                    if (clicked == 0) return false;
+                    pos = getCursorPos(e);
+                    if (pos < 0) pos = 0;
+                    if (pos > w) pos = w;
+                    slide(pos);
+                }
+                function getCursorPos(e) {
+                    var a, x = 0;
+                    e = (e.changedTouches) ? e.changedTouches[0] : e;
+                    a = img.getBoundingClientRect();
+                    x = e.pageX - a.left;
+                    x = x - window.pageXOffset;
+                    return x;
+                }
+                function slide(x) {
+                    img.style.width = x + "px";
+                    slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+                }
+            }
+        }
+        initComparisons();
+    </script>
+</body>
+</html>
